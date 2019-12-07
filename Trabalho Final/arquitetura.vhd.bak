@@ -1,0 +1,129 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity arquitetura is
+port(
+ligar 	: in std_logic;
+CLK	: in std_logic);
+end entity;
+
+architecture comportamento of arquitetura is
+component ULA is 
+port(
+A	: in std_logic_vector (15 downto 0);
+B	: in std_logic_vector (15 downto 0);
+op	: in std_logic_vector (1 downto 0);
+C	: buffer std_logic_vector (15 downto 0);
+z	: out std_logic;
+n 	: out std_logic); 
+end component ULA;
+component memo is
+port(
+ligar    : in std_logic;
+ende	 : in std_logic_vector(15 downto 0);
+w        : in std_logic;
+entrada	 : in std_logic_vector (15 downto 0);
+saida    : out std_logic_vector (15 downto 0));
+end component memo;
+component PC is
+port(
+CLK	 : in std_logic;
+start	 : in std_logic;
+entrada	 : in std_logic_vector (15 downto 0);
+salvar	 : in std_logic;
+saida    : out std_logic_vector (15 downto 0));
+end component PC;
+component controle is
+port(
+CLK	 : in std_logic;
+ligar    : in std_logic;
+codop	 : in std_logic_vector(3 downto 0);
+r1	 : in std_logic_vector(3 downto 0);
+z, n     : in std_logic;
+control	 : out std_logic_vector(9 downto 0);
+endSal	 : out std_logic_vector(3 downto 0);
+sel1     : out std_logic;
+proxPC	 : out std_logic);
+end component controle;
+component banco is
+port(
+CLK 	 : in std_logic;
+reg1	 : in std_logic_vector(3 downto 0);
+reg2	 : in std_logic_vector(3 downto 0);
+reg3	 : in std_logic_vector(3 downto 0);
+saida1	 : out std_logic_vector (15 downto 0);
+saida2	 : out std_logic_vector (15 downto 0);
+escrever : in std_logic;
+entrada  : in std_logic_vector (15 downto 0));
+end component banco;
+component deslocador is
+port(
+A	: in std_logic_vector (15 downto 0); --numero a ser control(1 downto 0)do
+des	: in std_logic; --control(1 downto 0)r? 0=nao 1=sim
+dir	: in std_logic; --direcao do control(1 downto 0)mento: 0=esquerda 1=direita
+C	: out std_logic_vector (15 downto 0)); --saida, control(1 downto 0)da ou nao
+end component deslocador;
+component mux2 is
+port(
+A	: in std_logic_vector (15 downto 0);
+B	: in std_logic_vector (15 downto 0);
+C	: in std_logic_vector (15 downto 0);
+D	: in std_logic_vector (15 downto 0);
+s	: in std_logic_vector (1 downto 0);
+saida	: out std_logic_vector (15 downto 0));
+end component mux2;
+component programa is
+port(
+start    : in std_logic;
+ende	 : in std_logic_vector(15 downto 0);
+saida    : out std_logic_vector (15 downto 0));
+end component;
+component mux is
+port(
+A	: in std_logic_vector (15 downto 0);
+B	: in std_logic_vector (15 downto 0);
+s	: in std_logic;
+C	: out std_logic_vector (15 downto 0));
+end component mux;
+
+signal r1,r2,AC: std_logic_vector(15 downto 0);
+signal inst    : std_logic_vector(15 downto 0);
+signal oper2   : std_logic_vector(15 downto 0);
+signal ULAout  : std_logic_vector(15 downto 0);
+signal ULAdes  : std_logic_vector(15 downto 0);
+signal MEMout  : std_logic_vector(15 downto 0);
+signal mux3out : std_logic_vector(15 downto 0);
+signal endIns  : std_logic_vector(15 downto 0);
+signal entPC   : std_logic_vector(15 downto 0);
+signal endPCaux: std_logic_vector(15 downto 0);
+signal j       : std_logic_vector(15 downto 0);
+signal i       : std_logic_vector(15 downto 0);
+signal oldI    : std_logic_vector(7 downto 0);
+signal oldJ    : std_logic_vector(11 downto 0);
+signal entBan  : std_logic_vector(15 downto 0);
+signal endSal  : std_logic_vector(3 downto 0);
+signal sel1    : std_logic;
+signal salvarPC: std_logic;
+signal control : std_logic_vector(9 downto 0);
+signal z, n    : std_logic;
+begin
+endPCaux <= endIns + "0000000000000001";
+oldJ <= inst(11 downto 0);
+oldI <= inst(7 downto 0);
+j <= std_logic_vector(resize(signed(oldJ), 16));
+i <= std_logic_vector(resize(signed(oldI), 16));
+programaP : programa port map(ligar, endIns, inst);
+bancoP    : banco port map(CLK, inst(11 downto 8), inst(7 downto 4), endSal, r1, r2, AC, control(8), entBan);
+mux2P     : mux2  port map(r2, j, i, "0000000000000000", control(6 downto 5), oper2);
+aluP      : ULA port map(r1, oper2, control(3 downto 2), ULAdes, z, n);
+desloP	  : deslocador port map(ULAdes, control(1 downto 0)(1), control(1 downto 0)(0), ULAout);
+memoP     : memo port map(ligar, ULAout, control(7), AC, MEMout);
+mux3P	  : mux port map(ULAout, MEMout, control(4), mux3out);
+mux1P	  : mux port map(mux3out, endPCaux, sel1, entPC);
+mux4P 	  : mux port map(endIns, mux3out, control(9), entBan);
+pcP	  : PC port map(CLK, ligar, entPC, salvarPC, endIns);
+contr     : controle port map(CLK, ligar, inst(15 downto 12),inst(7 downto 4), z, n, control,endSal, sel1, salvarPC);
+end architecture;

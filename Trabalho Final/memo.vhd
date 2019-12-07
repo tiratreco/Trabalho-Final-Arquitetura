@@ -1,0 +1,39 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity memo is
+port(
+ligar	 : in std_logic;
+ende	 : in std_logic_vector(15 downto 0);
+w	 : in std_logic;
+entrada	 : in std_logic_vector (15 downto 0);
+saida    : out std_logic_vector (15 downto 0));
+end memo;
+
+architecture comportamento of memo is
+signal endereco : integer range 0 to 65536;
+type memo is array (integer range 0 to 65536) of std_logic_vector(15 downto 0);
+signal memoria : memo;
+
+begin
+	endereco <= CONV_INTEGER(ende);
+	saida <= memoria(endereco);
+	process (ende, w, entrada)
+	begin
+	
+	if(ligar = '1') then
+		--PROGRAMA
+		memoria(0) <= "0000000011111111";
+		memoria(1) <= "0000000000000001";
+		memoria(2) <= "0011000000000110";
+		memoria(3) <= "0001000000001001";
+	end if;
+	if (w = '1') then
+		memoria(endereco) <= entrada;
+	end if;
+	end process;
+end architecture;

@@ -1,0 +1,106 @@
+{D:/Trabalho Final/controle.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/controle.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity controle
+-- Compiling architecture comportamento of controle
+
+} {} {}} {D:/Trabalho Final/memo.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/memo.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity memo
+-- Compiling architecture comportamento of memo
+
+} {} {}} {D:/Trabalho Final/deslocador.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/deslocador.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity deslocador
+-- Compiling architecture comportamento of deslocador
+
+} {} {}} {C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity negativo
+-- Compiling architecture comportamento of negativo
+
+} {} {}} {D:/Trabalho Final/PC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/PC.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity PC
+-- Compiling architecture comportamento of PC
+
+} {} {}} {D:/Trabalho Final/mux2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/mux2.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2
+-- Compiling architecture comportamento of mux2
+
+} {} {}} {C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ULA
+-- Compiling architecture comportamento of ULA
+
+} {} {}} {D:/Trabalho Final/arquitetura.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/arquitetura.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity arquitetura
+-- Compiling architecture comportamento of arquitetura
+
+} {} {}} {D:/Trabalho Final/mux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/mux.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux
+-- Compiling architecture comportamento of mux
+
+} {} {}} {D:/Trabalho Final/banco.vhd} {1 {vcom -work work -2002 -explicit -stats=none {D:/Trabalho Final/banco.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity banco
+-- Compiling architecture comportamento of banco
+
+} {} {}} {C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity zero
+-- Compiling architecture comportamento of zero
+
+} {} {}}
