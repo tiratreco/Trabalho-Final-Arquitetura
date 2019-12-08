@@ -29,8 +29,8 @@ begin
 		--PROGRAMA
 		memoria(0) <= "0000000011111111";
 		memoria(1) <= "0000000000000001";
-		memoria(2) <= "0011000000000110";
-		memoria(3) <= "0001000000001001";
+		memoria(2) <= "0000000100000000";
+		memoria(3) <= "0001000100001001";
 	end if;
 	if (w = '1') then
 		memoria(endereco) <= entrada;

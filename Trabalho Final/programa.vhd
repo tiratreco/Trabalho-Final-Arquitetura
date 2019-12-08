@@ -41,12 +41,15 @@ begin
 	--15 -> $V2
 	if(start = '1') then
 		--PROGRAMA
-		memoria(0) <= "1000000100000000";--lw $zero 0
-		memoria(1) <= "0100000001000000";--move $S1 $AC (S1 RECEBE AC)
-		memoria(2) <= "1000000100000001";--lw $zero 1
-		memoria(3) <= "0100000001010000";--move $S2 $AC (S2 RECEBE AC)
-		memoria(4) <= "0001010001010000";--add $S1 $S2
-		memoria(5) <= "1001000100000010";--sw $zero 2
+		memoria(0) <= "1000000100000001";--lw 1($zero)
+		memoria(1) <= "0100000001010000";--move $S2 $AC (S2 RECEBE AC)
+		memoria(2) <= "1000000100000000";--lw 0($zero)
+		memoria(3) <= "0100000001000000";--move $S1 $AC (S1 RECEBE AC)
+
+		memoria(4) <= "1000000100000010";--lw 2($zero)
+		memoria(5) <= "0100000001100000";--move $S3 $AC (S1 RECEBE AC)
+		memoria(6) <= "0001010001010000";--add $S1 $S2
+		memoria(7) <= "1010011011111010";--beq $S3 -6
 	end if;
 	end process;
 end architecture;

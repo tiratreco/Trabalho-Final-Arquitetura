@@ -21,15 +21,15 @@ signal memoria : memo;
 
 begin
 	endereco <= CONV_INTEGER(ende);
+	saida <= memoria(endereco);
 	process (ende, w, entrada)
 	begin
 	
-	saida <= memoria(endereco);
 	if(ligar = '1') then
 		--PROGRAMA
 		memoria(0) <= "0000000011111111";
 		memoria(1) <= "0000000000000001";
-		memoria(2) <= "0011000000000110";
+		memoria(2) <= "0000000000000001";
 		memoria(3) <= "0001000000001001";
 	end if;
 	if (w = '1') then

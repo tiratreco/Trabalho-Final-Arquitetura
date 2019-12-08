@@ -31,7 +31,7 @@ begin
 	--registradores:
 	--0 -> $AC
 	--1 -> $ZERO
-	--2 -> $SP
+	--2 -> $X <= AUXILIAR PARA INSTRUÇÕES
 	--3 -> $RA
 	
 	--4 -> $S1
@@ -45,8 +45,9 @@ begin
 	--12 -> $A1
 	--13 -> $A2
 	--14 -> $V1
-	--15 -> $V2
+	--15 -> $1 <= CONSTANTE 1
 	registradores(1) <= "0000000000000000";
+	registradores(15) <= "0000000000000001";
 	endreg1 <= CONV_INTEGER(reg1);
 	endreg2 <= CONV_INTEGER(reg2);
 	endreg3 <= CONV_INTEGER(reg3);

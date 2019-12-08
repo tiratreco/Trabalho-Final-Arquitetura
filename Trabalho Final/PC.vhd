@@ -17,8 +17,7 @@ end PC;
 architecture comportamento of PC is
 signal PC : std_logic_vector (15 downto 0);
 begin
-	saida <= PC;
-	process (CLK, entrada, salvar, start)
+	process (CLK, start, entrada, salvar)
 	begin
 	if (start = '1') then
 		PC <= "0000000000000000";
@@ -27,4 +26,5 @@ begin
 		PC <= entrada;
 	end if;
 	end process;
+	saida <= PC;
 end architecture;

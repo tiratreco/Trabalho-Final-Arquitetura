@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/gstvu
 Earquitetura
-Z0 w1575757949
+Z0 w1575822174
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
@@ -24,9 +24,9 @@ Vk9Z1ODNIlac0OL7;`Xbo[1
 !s100 >dM5LF7BT3gHPiKUP=hiB2
 Z9 OP;C;10.4a;61
 32
-Z10 !s110 1575759808
+Z10 !s110 1575822177
 !i10b 1
-Z11 !s108 1575759808.000000
+Z11 !s108 1575822177.000000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/arquitetura.vhd|
 Z13 !s107 D:/Trabalho Final/arquitetura.vhd|
 !i113 1
@@ -39,10 +39,10 @@ R3
 R4
 R5
 DEx4 work 11 arquitetura 0 22 k9Z1ODNIlac0OL7;`Xbo[1
-l113
+l120
 L13
-VY<kVZdBfnizMKIDf1gLoY3
-!s100 ji^RzfG49XXo72`=HcdzH3
+VDmD_dUY:F>3AY>_6^RaC20
+!s100 WVbZD44>;Z`4H]jKV<^>i1
 R9
 32
 R10
@@ -54,7 +54,7 @@ R13
 R14
 R15
 Ebanco
-Z16 w1575758872
+Z16 w1575811213
 R3
 R2
 R1
@@ -69,11 +69,11 @@ ViCPE=o3k;g8L_c;WDN00R2
 !s100 Q<L:k43oClnWkOnj`8N?03
 R9
 32
-Z19 !s110 1575759807
+R10
 !i10b 1
-Z20 !s108 1575759807.000000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/banco.vhd|
-Z22 !s107 D:/Trabalho Final/banco.vhd|
+R11
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/banco.vhd|
+Z20 !s107 D:/Trabalho Final/banco.vhd|
 !i113 1
 R14
 R15
@@ -86,39 +86,78 @@ R5
 DEx4 work 5 banco 0 22 iCPE=o3k;g8L_c;WDN00R2
 l25
 L20
-VO`LN>]TPYTMjVS>M?]QBh1
-!s100 c@IOH:S30@06b5G3M^>eK0
+VoSPc59:lXYe;hkLdNNzHB2
+!s100 T]4<GGHl`P?O9m:XKo`9`2
 R9
 32
-R19
+R10
 !i10b 1
+R11
+R19
 R20
-R21
-R22
+!i113 1
+R14
+R15
+Ecomparador
+Z21 w1575811913
+R4
+R5
+R6
+Z22 8D:/Trabalho Final/comparador.vhd
+Z23 FD:/Trabalho Final/comparador.vhd
+l0
+L4
+VPnkU1ZngIDc]O6DeMh[=f3
+!s100 Db:V[BSGOe5Q0j6gD_1K?2
+R9
+32
+Z24 !s110 1575822178
+!i10b 1
+Z25 !s108 1575822178.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/comparador.vhd|
+Z27 !s107 D:/Trabalho Final/comparador.vhd|
+!i113 1
+R14
+R15
+Acomportamento
+R4
+R5
+DEx4 work 10 comparador 0 22 PnkU1ZngIDc]O6DeMh[=f3
+l12
+L11
+V5nmC1PQ6i>lE8;cYMC[fG1
+!s100 83@YalEj2Z9ZWiG`ac3B@0
+R9
+32
+R24
+!i10b 1
+R25
+R26
+R27
 !i113 1
 R14
 R15
 Econtrole
-Z23 w1575758863
+Z28 w1575821083
 R3
 R2
 R1
 R4
 R5
 R6
-Z24 8D:/Trabalho Final/controle.vhd
-Z25 FD:/Trabalho Final/controle.vhd
+Z29 8D:/Trabalho Final/controle.vhd
+Z30 FD:/Trabalho Final/controle.vhd
 l0
 L7
-V^MB[[DbI?^SFK:=B_C?611
-!s100 YG<XCg1eRAa@K=eJKbN0C2
+VI`?<=B:2dKIGk0M77elJ>1
+!s100 ATTHX;933Nk;ocoLMUV>j2
 R9
 32
 R10
 !i10b 1
 R11
-Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/controle.vhd|
-Z27 !s107 D:/Trabalho Final/controle.vhd|
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/controle.vhd|
+Z32 !s107 D:/Trabalho Final/controle.vhd|
 !i113 1
 R14
 R15
@@ -128,39 +167,39 @@ R2
 R1
 R4
 R5
-DEx4 work 8 controle 0 22 ^MB[[DbI?^SFK:=B_C?611
-l23
+DEx4 work 8 controle 0 22 I`?<=B:2dKIGk0M77elJ>1
+l22
 L20
-V4[:4F>:VV[B5NDDW5An@J1
-!s100 j]TUk2LEnoXjNjL86CQG]0
+V7kLU<QS[8WQ_dCFndjB=o0
+!s100 zDkg0AiWI3Z1hI<chU9S31
 R9
 32
 R10
 !i10b 1
 R11
-R26
-R27
+R31
+R32
 !i113 1
 R14
 R15
 Edeslocador
-Z28 w1575642559
+Z33 w1575642559
 R4
 R5
 R6
-Z29 8D:/Trabalho Final/deslocador.vhd
-Z30 FD:/Trabalho Final/deslocador.vhd
+Z34 8D:/Trabalho Final/deslocador.vhd
+Z35 FD:/Trabalho Final/deslocador.vhd
 l0
 L4
 V5m@B>S[K<Z61A6XnH[GD;1
 !s100 ]e]kEL65AN8@8`k8a3ME]2
 R9
 32
-R19
+R10
 !i10b 1
-R20
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/deslocador.vhd|
-Z32 !s107 D:/Trabalho Final/deslocador.vhd|
+R11
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/deslocador.vhd|
+Z37 !s107 D:/Trabalho Final/deslocador.vhd|
 !i113 1
 R14
 R15
@@ -174,24 +213,24 @@ V>Bc5mnig4RRm`k0oOkb:A1
 !s100 fLzd=m0VJd4LLK?IL:P[S2
 R9
 32
-R19
+R10
 !i10b 1
-R20
-R31
-R32
+R11
+R36
+R37
 !i113 1
 R14
 R15
 Ememo
-Z33 w1575757044
+Z38 w1575816426
 R3
 R2
 R1
 R4
 R5
 R6
-Z34 8D:/Trabalho Final/memo.vhd
-Z35 FD:/Trabalho Final/memo.vhd
+Z39 8D:/Trabalho Final/memo.vhd
+Z40 FD:/Trabalho Final/memo.vhd
 l0
 L8
 VA=hRnElmXfB=_D7M>FMIl2
@@ -201,8 +240,8 @@ R9
 R10
 !i10b 1
 R11
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/memo.vhd|
-Z37 !s107 D:/Trabalho Final/memo.vhd|
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/memo.vhd|
+Z42 !s107 D:/Trabalho Final/memo.vhd|
 !i113 1
 R14
 R15
@@ -215,36 +254,36 @@ R5
 DEx4 work 4 memo 0 22 A=hRnElmXfB=_D7M>FMIl2
 l22
 L17
-Vb>>0Qaf9jf?8m:X4]A`:23
-!s100 jeX1W:^njzfIk@HS2<W5H1
+VIUDQe]kz]UhRe5fTIiJBW0
+!s100 FJVDS:[2nA9nEPjDE0lf72
 R9
 32
 R10
 !i10b 1
 R11
-R36
-R37
+R41
+R42
 !i113 1
 R14
 R15
 Emux
-Z38 w1575648753
+Z43 w1575648753
 R4
 R5
 R6
-Z39 8D:/Trabalho Final/mux.vhd
-Z40 FD:/Trabalho Final/mux.vhd
+Z44 8D:/Trabalho Final/mux.vhd
+Z45 FD:/Trabalho Final/mux.vhd
 l0
 L4
 Vz1k]>N3a5<A_@i[<Il59D3
 !s100 o9>XWfAFQI6djH[Y10Ul[3
 R9
 32
-R19
+R10
 !i10b 1
-R20
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/mux.vhd|
-Z42 !s107 D:/Trabalho Final/mux.vhd|
+R11
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/mux.vhd|
+Z47 !s107 D:/Trabalho Final/mux.vhd|
 !i113 1
 R14
 R15
@@ -258,21 +297,21 @@ V8X=BKoVA5IEK5jel[hA];2
 !s100 P9Q[iD=DfkABk26D6^Gg00
 R9
 32
-R19
+R10
 !i10b 1
-R20
-R41
-R42
+R11
+R46
+R47
 !i113 1
 R14
 R15
 Emux2
-Z43 w1575668303
+Z48 w1575668303
 R4
 R5
 R6
-Z44 8D:/Trabalho Final/mux2.vhd
-Z45 FD:/Trabalho Final/mux2.vhd
+Z49 8D:/Trabalho Final/mux2.vhd
+Z50 FD:/Trabalho Final/mux2.vhd
 l0
 L4
 VP7cTDG]lKB0ecJ]nAWc^k2
@@ -282,8 +321,8 @@ R9
 R10
 !i10b 1
 R11
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/mux2.vhd|
-Z47 !s107 D:/Trabalho Final/mux2.vhd|
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/mux2.vhd|
+Z52 !s107 D:/Trabalho Final/mux2.vhd|
 !i113 1
 R14
 R15
@@ -300,29 +339,29 @@ R9
 R10
 !i10b 1
 R11
-R46
-R47
+R51
+R52
 !i113 1
 R14
 R15
 Enegativo
-Z48 w1575631422
+Z53 w1575631422
 R4
 R5
 R6
-Z49 8C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd
-Z50 FC:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd
+Z54 8C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd
+Z55 FC:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd
 l0
 L5
 VE;9KkA=lzRHNjJ81RYm_S1
 !s100 ojWT83<Zb5>YZoNe>>oWW3
 R9
 32
-R19
+Z56 !s110 1575822176
 !i10b 1
-R20
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd|
-Z52 !s107 C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd|
+Z57 !s108 1575822176.000000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd|
+Z59 !s107 C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/negativo.vhd|
 !i113 1
 R14
 R15
@@ -336,51 +375,6 @@ VmAg1h6A:3G`zNoCaE[?bi3
 !s100 i0A^AY?@EbU<QggSZ[BE>1
 R9
 32
-R19
-!i10b 1
-R20
-R51
-R52
-!i113 1
-R14
-R15
-Epc
-Z53 w1575747104
-R3
-R2
-R1
-R4
-R5
-R6
-Z54 8D:/Trabalho Final/PC.vhd
-Z55 FD:/Trabalho Final/PC.vhd
-l0
-L8
-VbJd4=B8HXFZngVE6E8WN62
-!s100 V[?n4H9g7YS7h81A?QR>V2
-R9
-32
-Z56 !s110 1575759809
-!i10b 1
-Z57 !s108 1575759809.000000
-Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/PC.vhd|
-Z59 !s107 D:/Trabalho Final/PC.vhd|
-!i113 1
-R14
-R15
-Acomportamento
-R3
-R2
-R1
-R4
-R5
-Z60 DEx4 work 2 pc 0 22 bJd4=B8HXFZngVE6E8WN62
-l19
-L17
-Z61 VZ5NF695>1m^Y755SJAjaF1
-Z62 !s100 bA;iBiZ21Vf7YNf2OZjYm3
-R9
-32
 R56
 !i10b 1
 R57
@@ -389,27 +383,27 @@ R59
 !i113 1
 R14
 R15
-Eprograma
-Z63 w1575759803
+Epc
+Z60 w1575818789
 R3
 R2
 R1
 R4
 R5
 R6
-Z64 8D:/Trabalho Final/programa.vhd
-Z65 FD:/Trabalho Final/programa.vhd
+Z61 8D:/Trabalho Final/PC.vhd
+Z62 FD:/Trabalho Final/PC.vhd
 l0
-L7
-V>lEkkC826]U9U47@4WiCT2
-!s100 GKEJgjTOO``O1]8M_:M:F3
+L8
+VbJd4=B8HXFZngVE6E8WN62
+!s100 V[?n4H9g7YS7h81A?QR>V2
 R9
 32
-R10
+R24
 !i10b 1
 R11
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/programa.vhd|
-Z67 !s107 D:/Trabalho Final/programa.vhd|
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/PC.vhd|
+Z64 !s107 D:/Trabalho Final/PC.vhd|
 !i113 1
 R14
 R15
@@ -419,41 +413,86 @@ R2
 R1
 R4
 R5
-DEx4 work 8 programa 0 22 >lEkkC826]U9U47@4WiCT2
+DEx4 work 2 pc 0 22 bJd4=B8HXFZngVE6E8WN62
 l19
-L14
-VNNCmkLAVYe4ifdR;Te8LL1
-!s100 _o[GfL_2?`Jf]^5lRgk[P0
+L17
+Vn6Vj^8<5:@1CF3e20V7Lc3
+!s100 I?Iek161452Q9GdQLFL1J1
 R9
 32
-R10
+R24
 !i10b 1
 R11
-R66
-R67
+R63
+R64
+!i113 1
+R14
+R15
+Eprograma
+Z65 w1575822276
+R3
+R2
+R1
+R4
+R5
+R6
+Z66 8D:/Trabalho Final/programa.vhd
+Z67 FD:/Trabalho Final/programa.vhd
+l0
+L7
+V>lEkkC826]U9U47@4WiCT2
+!s100 GKEJgjTOO``O1]8M_:M:F3
+R9
+32
+Z68 !s110 1575822286
+!i10b 1
+Z69 !s108 1575822285.000000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/Trabalho Final/programa.vhd|
+Z71 !s107 D:/Trabalho Final/programa.vhd|
+!i113 1
+R14
+R15
+Acomportamento
+R3
+R2
+R1
+R4
+R5
+Z72 DEx4 work 8 programa 0 22 >lEkkC826]U9U47@4WiCT2
+l19
+L14
+V06SaI4]RJH6d^nI[TMnnh1
+!s100 TWL?lXNTTlzW=gY5]WMNn1
+R9
+32
+R68
+!i10b 1
+R69
+R70
+R71
 !i113 1
 R14
 R15
 Eula
-Z68 w1575694477
+Z73 w1575694477
 R2
 R3
 R4
 R5
 R6
-Z69 8C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd
-Z70 FC:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd
+Z74 8C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd
+Z75 FC:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd
 l0
 L5
 VSMGHD]bWNjQdNF^J2<NY_0
 !s100 d[i[EMY;UjJ;On^Y8AWHQ0
 R9
 32
-Z71 !s110 1575759806
+R56
 !i10b 1
-Z72 !s108 1575759806.000000
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd|
-Z74 !s107 C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd|
+R57
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd|
+Z77 !s107 C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/ULA.vhd|
 !i113 1
 R14
 R15
@@ -469,32 +508,32 @@ V830QQgigQX9Pkkk@Nnk>20
 !s100 f`f^3i]BE:AX@AIR7QFPA0
 R9
 32
-R71
+R56
 !i10b 1
-R72
-R73
-R74
+R57
+R76
+R77
 !i113 1
 R14
 R15
 Ezero
-Z75 w1575631400
+Z78 w1575631400
 R4
 R5
 R6
-Z76 8C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd
-Z77 FC:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd
+Z79 8C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd
+Z80 FC:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd
 l0
 L5
 V;n5SaA7:[b8:]>C>K>nPR1
 !s100 ;Mk0EeN0kC;nPHMEEm6[]0
 R9
 32
-R19
+R56
 !i10b 1
-R20
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd|
-Z79 !s107 C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd|
+R57
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd|
+Z82 !s107 C:/Users/gstvu/OneDrive/햞ea de Trabalho/Trabalho Final/zero.vhd|
 !i113 1
 R14
 R15
@@ -508,11 +547,11 @@ VHRAM_@8GK=c4WL3I[o^bk2
 !s100 H87CLZMCT4Q:bn^CE8diY1
 R9
 32
-R19
+R56
 !i10b 1
-R20
-R78
-R79
+R57
+R81
+R82
 !i113 1
 R14
 R15

@@ -20,6 +20,12 @@ C	: buffer std_logic_vector (15 downto 0);
 z	: out std_logic;
 n 	: out std_logic); 
 end component ULA;
+component comparador is
+port(
+A	: in std_logic_vector (15 downto 0);
+B	: in std_logic_vector (15 downto 0);
+saida	: out std_logic);
+end component comparador;
 component memo is
 port(
 ligar    : in std_logic;
@@ -42,10 +48,10 @@ CLK	 : in std_logic;
 ligar    : in std_logic;
 codop	 : in std_logic_vector(3 downto 0);
 r1	 : in std_logic_vector(3 downto 0);
-z, n     : in std_logic;
+z, n,ig  : in std_logic;
 control	 : out std_logic_vector(9 downto 0);
 endSal	 : out std_logic_vector(3 downto 0);
-sel1     : out std_logic;
+sel1     : out std_logic_vector(1 downto 0);
 proxPC	 : out std_logic);
 end component controle;
 component banco is
@@ -106,25 +112,31 @@ signal oldI    : std_logic_vector(7 downto 0);
 signal oldJ    : std_logic_vector(11 downto 0);
 signal entBan  : std_logic_vector(15 downto 0);
 signal endSal  : std_logic_vector(3 downto 0);
-signal sel1    : std_logic;
+signal sel1    : std_logic_vector(1 downto 0);
+signal endmi   : std_logic_vector(15 downto 0);
 signal salvarPC: std_logic;
 signal control : std_logic_vector(9 downto 0);
-signal z, n    : std_logic;
+signal z, n, ig: std_logic;
 begin
 endPCaux <= endIns + "0000000000000001";
+process (CLK)
+begin
+endmi <= endIns + i;
+end process;
 oldJ <= inst(11 downto 0);
 oldI <= inst(7 downto 0);
 j <= std_logic_vector(resize(signed(oldJ), 16));
 i <= std_logic_vector(resize(signed(oldI), 16));
 programaP : programa port map(ligar, endIns, inst);
+comp	  : comparador port map(AC, R1, ig);
 bancoP    : banco port map(CLK, inst(11 downto 8), inst(7 downto 4), endSal, r1, r2, AC, control(8), entBan);
 mux2P     : mux2  port map(r2, j, i, "0000000000000000", control(6 downto 5), oper2);
 aluP      : ULA port map(r1, oper2, control(3 downto 2), ULAdes, z, n);
 desloP	  : deslocador port map(ULAdes, control(1 downto 0)(1), control(1 downto 0)(0), ULAout);
 memoP     : memo port map(ligar, ULAout, control(7), AC, MEMout);
 mux3P	  : mux port map(ULAout, MEMout, control(4), mux3out);
-mux1P	  : mux port map(mux3out, endPCaux, sel1, entPC);
+mux1P	  : mux2 port map(mux3out, endPCaux,endmi , "0000000000000000", sel1, entPC);
 mux4P 	  : mux port map(endIns, mux3out, control(9), entBan);
 pcP	  : PC port map(CLK, ligar, entPC, salvarPC, endIns);
-contr     : controle port map(CLK, ligar, inst(15 downto 12),inst(7 downto 4), z, n, control,endSal, sel1, salvarPC);
+contr     : controle port map(CLK, ligar, inst(15 downto 12),inst(7 downto 4), z, n, ig, control,endSal, sel1, salvarPC);
 end architecture;
